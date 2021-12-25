@@ -142,21 +142,11 @@ name.slugify()
 Yes, you can load only the prototypes you need.
  
 
-*Only string prototypes*
 ```js
-require("jspro/string")
-```
-*Only number prototypes*
-```js
-require("jspro/number")
-```
-*Only array prototypes*
-```js
-require("jspro/array")
-```
-*Only object prototypes*
-```js
-require("jspro/object")
+require("jspro/string") // string only
+require("jspro/number") // number only 
+require("jspro/object") // object only
+require("jspro/array")  // array only
 ```
 By default, all four types of prototypes will be loaded. 
 
