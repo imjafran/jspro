@@ -105,12 +105,16 @@ import "jspro"
 #### Capital Case
 
 ```js
+const name = 'john'
+
 name.toCapitalCase()
 
 // John
 ```
 #### Reverse
 ```js
+const name = 'John'
+
 name.reverse()
 
 // nhoJ
