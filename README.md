@@ -127,7 +127,7 @@ name.toCamelCase()
 ```js
 const name = 'Hello World'
 
-name.toCamelCase()
+name.slugify()
 
 // hello-world
 ```
