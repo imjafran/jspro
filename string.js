@@ -1,1 +1,1 @@
-String.assign(String.prototype, require("./protos/string"));
+Object.assign(String.prototype, require("./protos/string"));

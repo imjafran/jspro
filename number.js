@@ -1,1 +1,1 @@
-Number.assign(Number.prototype, require("./protos/number"));
+Object.assign(Number.prototype, require("./protos/number"));

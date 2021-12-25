@@ -4,14 +4,11 @@ Whatever, it's a library of hundreds of awesome JavaScript Prototypes (you may k
 <br>
 <br>
 >#### **Sigma rule 512**
-> Life is not a pressure cooker, don't let the pressure get into it. 
-
-<br>
+>#### Life is not a pressure cooker, don't let the pressure get into it. 
 
 ___
 
-
-## Not clear yet? 
+### Not clear yet? 
 Currently you are able to use some limited prototypes. For rest of the small programs, you need to re-invent the wheel. 
 
 #### For example
@@ -36,7 +33,9 @@ But JavaScript doesn't have any built-in prototypes or functions to capitalize s
 ```js
 const capitalizeString = (str) => str[0].toUpperCase() + str.slice(1)
 
-console.log(capitalizeString('john'));
+const name = "john"
+
+console.log(capitalizeString(name));
 
 // John
 ```
@@ -76,7 +75,7 @@ ___
 
 # <a name="install"></a> Install
 
-Simply install as Node Package
+Simply install from you terminal
 ```bash
 npm i jspro
 ```
@@ -93,18 +92,45 @@ require("jspro")
 ```js
 import "jspro"
 ```
-You can even compile through bundler tool like webpack, gulp or equivalent. 
 
 # <a name="prototypes"></a> Prototypes
 
-1. [ String ](#string)
-2. [ Number ](#number)
-3. [ Object ](#object)
-4. [ Array ](#array)
+1. [ String prototypes ](#string)
+2. [ Number prototypes ](#number)
+3. [ Object prototypes ](#object)
+4. [ Array prototypes ](#array)
    
-## <a name="string"></a> String
+## <a name="string"></a> String 
 
 #### Capital Case
+
+```js
+name.toCapitalCase()
+
+// John
+```
+#### Reverse
+```js
+name.reverse()
+
+// nhoJ
+```
+#### Camel Case
+```js
+const name = 'John Doe'
+
+name.toCamelCase()
+
+// johnDoe
+```
+#### Slugify
+```js
+const name = 'Hello World'
+
+name.toCamelCase()
+
+// hello-world
+```
 
 
 # <a name="customization"></a> Customization
@@ -114,19 +140,19 @@ Yes, you can load only the prototypes you need.
 
 *Only string prototypes*
 ```js
-import "jspro/string"
+require("jspro/string")
 ```
 *Only number prototypes*
 ```js
-import "jspro/number"
+require("jspro/number")
 ```
 *Only array prototypes*
 ```js
-import "jspro/array"
+require("jspro/array")
 ```
 *Only object prototypes*
 ```js
-import "jspro/object"
+require("jspro/object")
 ```
 By default, all four types of prototypes will be loaded. 
 
@@ -134,7 +160,7 @@ By default, all four types of prototypes will be loaded.
 
 Publisher [Jafran Hasan](https://www.facebook.com/IamJafran/)
 
-### Planning to contribute?
+#### Planning to contribute?
 
 Seems like you are not too lazy!
 

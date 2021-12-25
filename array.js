@@ -1,1 +1,1 @@
-Array.assign(Array.prototype, require("./protos/array"));
+Object.assign(Array.prototype, require("./protos/array"));
