@@ -1,3 +1,4 @@
-require("./protos/base")
-
- 
+require("./string")
+require("./number")
+require("./object")
+require("./array")

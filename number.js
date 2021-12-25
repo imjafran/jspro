@@ -1,0 +1,1 @@
+Number.assign(Number.prototype, require("./protos/number"));
