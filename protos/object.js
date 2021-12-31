@@ -1,5 +1,7 @@
-const ObjectProtos = {
-   
-}
+const fn = require("../fn/fn");
 
-module.exports = ObjectProtos
+const ObjectProtos = {
+     
+};
+
+module.exports = ObjectProtos;

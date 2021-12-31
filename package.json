@@ -3,10 +3,12 @@
   "version": "1.0.1",
   "description": "JSPro or JavaScript Prototypes is a library of hundreds of awesome prototypes for lazy programmers.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test" : "node test"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/imjafran/jsextended.git"
+    "url": "git+https://github.com/imjafran/jspro.git"
   },
   "keywords": [
     "jspro",
@@ -26,7 +28,8 @@
     "dec",
     "srl",
     "sll",
-    "shift logical"
+    "shift left",
+    "shift right"
   ],
   "author": "iamjafran",
   "license": "MIT",
