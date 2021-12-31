@@ -5,13 +5,10 @@ require("./index")
 
 
 
-var n = [
-    {name: "Jafran", age: 11},
-    {name: "Hasan", age : 34},
-    {name: "Test", age : 1},
-]
+var n = [ { name: "John" },
+    { name: "Doe" } ]
  
-n = n.sort_by("age")
+n = n.sort_by("name")
 
 
 console.log(n);

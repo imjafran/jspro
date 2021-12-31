@@ -1,4 +1,4 @@
-## <a name="intro"></a> WTF **JSPro** is!
+## WTF **JSPro** is!
 **JSPro** is nothing but **J**ava**S**cript **Pro**totypes! The publisher is too lazy to write full name that's why it's just **JSPro**.
 Whatever, it's a library of hundreds of awesome JavaScript Prototypes (you may know it as  *dot function*) for lazy programmers. Just install the package with a little effort and leave the blames for the publisher. 
 <br>
@@ -57,52 +57,51 @@ JSPro has hundreds of awesome prototypes like this. You don't need to reinvent t
 
 <br>
 
-### *Table of contents*
-1. [ Intro ](#intro) 
-2. [ Install ](#install)
-3. [ Usage ](#usage)
-4. [ Prototypes ](#prototypes)
-   1. [ String ](#string)
-   1. [ Number ](#number)
-   1. [ Object ](#object)
-   1. [ Array ](#array)
-5. [ Customization ](#customization) 
-5. [ Contribution ](#contribution) 
+*Table of contents*
+- [Install](#install)
+- [Usage](#usage)
+- [Prototypes](#prototypes)
+  - [String](#string)
+  - [Number](#number)
+  - [Object](#object)
+  - [Array](#array)
+- [Customization](#customization)
+- [Contribution](#contribution)
 
 <br>
 
 ___
 
-# <a name="install"></a> Install
+# Install
 
 Simply install from you terminal
 ```bash
 npm i jspro
 ```
 
-# <a name="usage"></a> Usage
+# Usage
 
 You can use JSPro as Node module as well as ES6/ESNext module.
 
-### Node 
+**Node** 
 ```js
 require("jspro")
 ```
-### ESNext 
+**ESNext**
 ```js
 import "jspro"
 ```
 
-# <a name="prototypes"></a> Prototypes
+# Prototypes
 
-1. [ String prototypes ](#string)
-2. [ Number prototypes ](#number)
-3. [ Object prototypes ](#object)
-4. [ Array prototypes ](#array)
+1. [ String ](#string)
+2. [ Number ](#number)
+3. [ Object ](#object)
+4. [ Array ](#array)
    
-## <a name="string"></a> String 
+## String 
 
-#### Capital Case
+`toCapitaCase`
 
 ```js
 const name = 'john'
@@ -111,7 +110,9 @@ name.toCapitalCase()
 
 // John
 ```
-#### Reverse
+
+
+`reverse`
 ```js
 const name = 'John'
 
@@ -119,7 +120,10 @@ name.reverse()
 
 // nhoJ
 ```
-#### Camel Case
+
+
+
+`toCamelCase`
 ```js
 const name = 'John Doe'
 
@@ -127,7 +131,10 @@ name.toCamelCase()
 
 // johnDoe
 ```
-#### Slugify
+
+
+
+`slugify`
 ```js
 const name = 'Hello World'
 
@@ -136,25 +143,190 @@ name.slugify()
 // hello-world
 ```
 
+`dec`
 
-# <a name="customization"></a> Customization
+Hexadecimal to decimal
+
+```js
+const hex = 'a'
+
+hex.dec()
+
+// 10 
+```
+
+
+`bin`
+
+Hexadecimal to binary
+
+```js
+const hex = 'a'
+
+hex.bin()
+
+// 1010
+
+/**
+ * hex a = decimal 10 = binary 1010 
+ */
+
+```
+
+
+## Number
+
+`reverse`
+```js
+const number = 12345
+
+number.reverse()
+
+// 54321
+```
+
+`repeat`
+```js
+const number = 12
+
+number.repeat(2)
+
+// 1212
+```
+
+`bin`
+
+Decimal to binary
+```js
+const number = 2
+
+number.bin()
+
+// 11
+```
+
+`hex`
+
+Decimal to hexadecimal
+```js
+const number = 10
+
+number.hex()
+
+// a
+```
+
+
+`is_even`
+
+Returns true when number is even
+```js
+const number = 2
+
+number.is_even()
+
+// true
+```
+
+
+`is_prime`
+
+Returns true when number is prime
+```js
+const number = 7
+
+number.is_prime()
+
+// true
+```
+
+
+`is_palindromic`
+
+Returns true when number is palindromic
+```js
+const number = 12321
+
+number.is_palindromic()
+
+// true
+```
+
+
+`sll`
+
+Performs shift left logical, shifts `n`-th bite to left
+```js
+const number = 2
+const biteToShift = 1
+
+number.sll(biteToShift) // The number of bite ti be shifted, default is 1
+
+// 4
+```
+
+
+`srl`
+
+Performs shift right logical, shifts `n`-th bite to right
+```js
+const number = 6
+const biteToShift = 1
+
+number.srl(biteToShift) // The number of bite ti be shifted, default is 1
+
+// 3
+```
+ 
+
+
+## Object
+
+## Array
+
+`Array.prototype.sort_by`
+
+If you have an array where elements are object, you can sort this now by using `sort_by` prototype with passing the key as string. 
+
+```js
+const list = [
+  { name: 'John' },
+  { name: 'Doe' }
+]
+
+list.sort_by("name")
+
+/* 
+
+[ 
+  { name: 'Doe' }, 
+  { name: 'John' } 
+]
+
+*/
+```
+
+# Customization
 
 Yes, you can load only the prototypes you need.
  
 
 ```js
 require("jspro/string") // string only
+
 require("jspro/number") // number only 
+
 require("jspro/object") // object only
+
 require("jspro/array")  // array only
 ```
 By default, all four types of prototypes will be loaded. 
 
-# <a name="contribution"></a> Contribution 
+# Contribution 
 
 Publisher [Jafran Hasan](https://www.facebook.com/IamJafran/)
 
-#### Planning to contribute?
+**Planning to contribute?**
 
 Seems like you are not too lazy!
 

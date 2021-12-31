@@ -25,14 +25,14 @@ const NumberProtos = {
   /**
    * Returns true when number is even
    */
-  isEven() {
+  is_even() {
     return this % 2 == 0;
   },
 
   /**
    * Returns true when number is prime
    */
-  isPrime() {
+  is_prime() {
     for (var i = 2; i < Math.abs(this / 2); i++) {
       if (this % i === 0) {
         return false;
