@@ -59,11 +59,10 @@ JSPro has hundreds of awesome prototypes like this. You don't need to reinvent t
 
 *Table of contents*
 - [Install](#install)
-- [Usage](#usage)
+- [Usages](#usages)
 - [Prototypes](#prototypes)
   - [String](#string)
   - [Number](#number)
-  - [Object](#object)
   - [Array](#array)
 - [Customization](#customization)
 - [Contribution](#contribution)
@@ -74,14 +73,14 @@ ___
 
 # Install
 
-Simply install from you terminal
+Simply install from you terminal as dev-dependency
 ```bash
-npm i jspro
+npm i -D jspro
 ```
 
-# Usage
+# Usages
 
-You can use JSPro as Node module as well as ES6/ESNext module.
+You can use JSPro as Node module as well as ES6/ESNext module. Whatever, only requiring or imporing is enough. YOU DON'T HAVE TO INITIALIZE JSPro. 
 
 **Node** 
 ```js
@@ -95,13 +94,14 @@ import "jspro"
 # Prototypes
 
 1. [ String ](#string)
-2. [ Number ](#number)
-3. [ Object ](#object)
-4. [ Array ](#array)
+2. [ Number ](#number) 
+3. [ Array ](#array)
    
 ## String 
 
-`toCapitaCase`
+**`toCapitaCase`**
+
+Returns first character capitalized
 
 ```js
 const name = 'john'
@@ -112,7 +112,10 @@ name.toCapitalCase()
 ```
 
 
-`reverse`
+**`reverse`**
+
+Returns reversed string
+
 ```js
 const name = 'John'
 
@@ -123,7 +126,10 @@ name.reverse()
 
 
 
-`toCamelCase`
+**`toCamelCase`**
+
+Returns camel case string
+
 ```js
 const name = 'John Doe'
 
@@ -134,7 +140,10 @@ name.toCamelCase()
 
 
 
-`slugify`
+**`slugify`**
+
+Slugifies string
+
 ```js
 const name = 'Hello World'
 
@@ -143,7 +152,7 @@ name.slugify()
 // hello-world
 ```
 
-`dec`
+**`dec`**
 
 Hexadecimal to decimal
 
@@ -156,7 +165,7 @@ hex.dec()
 ```
 
 
-`bin`
+**`bin`**
 
 Hexadecimal to binary
 
@@ -176,7 +185,10 @@ hex.bin()
 
 ## Number
 
-`reverse`
+**`reverse`**
+
+Reverses number
+
 ```js
 const number = 12345
 
@@ -185,7 +197,10 @@ number.reverse()
 // 54321
 ```
 
-`repeat`
+**`repeat`**
+
+Repeats number
+
 ```js
 const number = 12
 
@@ -194,7 +209,7 @@ number.repeat(2)
 // 1212
 ```
 
-`bin`
+**`bin`**
 
 Decimal to binary
 ```js
@@ -205,7 +220,7 @@ number.bin()
 // 11
 ```
 
-`hex`
+**`hex`**
 
 Decimal to hexadecimal
 ```js
@@ -217,7 +232,7 @@ number.hex()
 ```
 
 
-`is_even`
+**`is_even`**
 
 Returns true when number is even
 ```js
@@ -229,7 +244,7 @@ number.is_even()
 ```
 
 
-`is_prime`
+**`is_prime`**
 
 Returns true when number is prime
 ```js
@@ -241,7 +256,7 @@ number.is_prime()
 ```
 
 
-`is_palindromic`
+**`is_palindromic`**
 
 Returns true when number is palindromic
 ```js
@@ -253,7 +268,7 @@ number.is_palindromic()
 ```
 
 
-`sll`
+**`sll`**
 
 Performs shift left logical, shifts `n`-th bite to left
 ```js
@@ -266,7 +281,7 @@ number.sll(biteToShift) // The number of bite ti be shifted, default is 1
 ```
 
 
-`srl`
+**`srl`**
 
 Performs shift right logical, shifts `n`-th bite to right
 ```js
@@ -277,14 +292,12 @@ number.srl(biteToShift) // The number of bite ti be shifted, default is 1
 
 // 3
 ```
- 
-
-
-## Object
 
 ## Array
 
-`Array.prototype.sort_by`
+**`sort_by`**
+
+Returns sorted array by object key name. 
 
 If you have an array where elements are object, you can sort this now by using `sort_by` prototype with passing the key as string. 
 
@@ -314,9 +327,7 @@ Yes, you can load only the prototypes you need.
 ```js
 require("jspro/string") // string only
 
-require("jspro/number") // number only 
-
-require("jspro/object") // object only
+require("jspro/number") // number only  
 
 require("jspro/array")  // array only
 ```
@@ -324,10 +335,22 @@ By default, all four types of prototypes will be loaded.
 
 # Contribution 
 
-Publisher [Jafran Hasan](https://www.facebook.com/IamJafran/)
+**Publisher**
+
+- [x] [Jafran Hasan](https://www.facebook.com/IamJafran/)
+
+
+**Contributors**
+- [x] [Be first here](https://github.com/imjafran/jspro.git)
+
+<br>
 
 **Planning to contribute?**
 
+
 Seems like you are not too lazy!
+
+
+[Git Repository](https://github.com/imjafran/jspro)
 
 Thanks for your interested. You can pull the repo from git. But you are requested to open a ticket before pushing for discussing on what you are planning to add. 
